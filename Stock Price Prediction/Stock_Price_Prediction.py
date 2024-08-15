@@ -12,9 +12,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
+
 # Step 1: Data Collection
 # Download historical stock data for Apple Inc. (AAPL) from Yahoo Finance using the yfinance library.
-# We're fetching data from January 1, 2010, to January 1, 2023.
+# Data from January 1, 2010, to January 1, 2023.
 symbol = 'AAPL'
 data = yf.download(symbol, start='2010-01-01', end='2023-01-01')
 
